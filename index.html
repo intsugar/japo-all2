@@ -38,6 +38,7 @@
   *{box-sizing:border-box;margin:0;padding:0}
   html{-webkit-text-size-adjust:100%}
   body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.5;transition:background .2s,color .2s}
+  
   body.dark .mode button.active{color:#131010}
   body.dark .mode button.active.avoid{color:#fff}
   body.dark .card-head:active{background:#242020}
@@ -178,7 +179,6 @@ const DATA = {
     }, 
     "cats": ["KITCHEN", "RAW BAR", "SIGNATURE ROLLS"], 
     "dishes": [ 
-       
       {
         "name": "Seaweed Salad", 
         "cat": "KITCHEN", 
@@ -321,6 +321,15 @@ const DATA = {
         "alg": [{"a": "Egg", "s": "Spicy tuna"}, {"a": "Soy", "s": "Spicy tuna"}, {"a": "Fish", "s": "Spicy tuna, Atlantic salmon"}, {"a": "Citrus", "s": "Lime flesh"}, {"a": "Nightshade", "s": "Spicy tuna, jalapeños"}, {"a": "Rice", "s": "Sushi rice"}, {"a": "Garlic", "s": "Spicy tuna"}, {"a": "Avocado", "s": "Avocado"}, {"a": "Cilantro", "s": "Cilantro"}], 
         "pair": {"w": "Riesling or dry rosé — slight sweetness balances the spice and fish.", "r": "Pinot Noir or lighter red blend, slightly chilled — bright and fruity with the heat.", "s": "Nigori — creamy texture and touch of sweetness coats the tongue and cools the burn."}, 
         "img": "https://d1w7312wesee68.cloudfront.net/os-tR6WKCUdlOg8ie-m_O4fsp5vehhuZTwkcRjdK9lM/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/80a4b015-385e-405f-8cca-611f7d73cd5b.jpg"
+      },
+      {
+        "name": "King Midas Roll", 
+        "cat": "SIGNATURE ROLLS", 
+        "ings": ["Spicy tuna", "Avocado", "Cucumber", "Hamachi", "Lime flesh", "Jalapeños", "Cilantro", "Sushi rice"], 
+        "alg": [{"a": "Egg", "s": "Spicy tuna"}, {"a": "Soy", "s": "Spicy tuna"}, {"a": "Fish", "s": "Spicy tuna, Hamachi"}, {"a": "Citrus", "s": "Lime flesh"}, {"a": "Nightshade", "s": "Spicy tuna, jalapeños"}, {"a": "Rice", "s": "Sushi rice"}, {"a": "Garlic", "s": "Spicy tuna"}, {"a": "Avocado", "s": "Avocado"}, {"a": "Cilantro", "s": "Cilantro"}], 
+        "pair": {"w": "Dry rosé or Riesling — slight sweetness and fruit tones balance the spice and fish tones.", "r": "Pinot Noir or lighter red blend, slightly chilled — bright, fruity flavors pair beautifully with the creamy tuna and heat.", "s": "Nigori sake — creamy texture and a touch of sweetness balance flavors and cool the heat of the peppers."},
+        "thumb": "https://d1w7312wesee68.cloudfront.net/1gZMq4LnCKuJUTLePipIV0zdOUE5BsbItg69dKJh-sw/resize:fit:360:360/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/cd2c6a50-fd11-4b20-9932-6a114b762d0d.jpg",
+        "img": "https://d1w7312wesee68.cloudfront.net/OxOrS67iiyPx0DM3rDWaF2gegfJdpO9XKrf7akcvoFw/resize:fit:720:720/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/cd2c6a50-fd11-4b20-9932-6a114b762d0d.jpg"
       }
     ]
   }, 
@@ -473,6 +482,15 @@ const DATA = {
         "alg": [{"a": "Huevo", "s": "Atún picante"}, {"a": "Soya", "s": "Atún picante"}, {"a": "Pescado", "s": "Atún picante, salmón del Atlántico"}, {"a": "Cítricos", "s": "Pulpa de limón"}, {"a": "Solanáceas", "s": "Atún picante, jalapeños"}, {"a": "Arroz", "s": "Arroz de sushi"}, {"a": "Ajo", "s": "Atún picante"}, {"a": "Aguacate", "s": "Aguacate"}, {"a": "Cilantro", "s": "Cilantro"}], 
         "pair": {"w": "Riesling o rosado seco — su dulzor ligero equilibra el picante y el pescado.", "r": "Pinot Noir o mezcla tinta ligera, ligeramente fría — frutal, no choca con el pescado crudo.", "s": "Nigori — cremoso y con un toque dulce; cubre la lengua y apaga el picor."}, 
         "img": "https://d1w7312wesee68.cloudfront.net/os-tR6WKCUdlOg8ie-m_O4fsp5vehhuZTwkcRjdK9lM/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/80a4b015-385e-405f-8cca-611f7d73cd5b.jpg"
+      },
+      {
+        "name": "King Midas Roll", 
+        "cat": "ROLLOS ESPECIALES", 
+        "ings": ["Atún picante", "Aguacate", "Pepino", "Hamachi", "Pulpa de limón", "Jalapeños", "Cilantro", "Arroz de sushi"], 
+        "alg": [{"a": "Huevo", "s": "Atún picante"}, {"a": "Soya", "s": "Atún picante"}, {"a": "Pescado", "s": "Atún picante, Hamachi"}, {"a": "Cítricos", "s": "Pulpa de limón"}, {"a": "Solanáceas", "s": "Atún picante, jalapeños"}, {"a": "Arroz", "s": "Arroz de sushi"}, {"a": "Ajo", "s": "Atún picante"}, {"a": "Aguacate", "s": "Aguacate"}, {"a": "Cilantro", "s": "Cilantro"}], 
+        "pair": {"w": "Rosado seco o Riesling — su ligero dulzor y tonos frutales equilibran el picante y el pescado.", "r": "Pinot Noir o mezcla tinta ligera, ligeramente frío — brillante y frutal; combina maravillosamente con la cremosidad del atún y el picante.", "s": "Nigori sake — su textura cremosa y toque dulce equilibran los sabores y alivian el picor de los pimientos."},
+        "thumb": "https://d1w7312wesee68.cloudfront.net/1gZMq4LnCKuJUTLePipIV0zdOUE5BsbItg69dKJh-sw/resize:fit:360:360/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/cd2c6a50-fd11-4b20-9932-6a114b762d0d.jpg",
+        "img": "https://d1w7312wesee68.cloudfront.net/OxOrS67iiyPx0DM3rDWaF2gegfJdpO9XKrf7akcvoFw/resize:fit:720:720/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/cd2c6a50-fd11-4b20-9932-6a114b762d0d.jpg"
       }
     ]
   }
@@ -569,7 +587,7 @@ function cardHtml(item, term){
   });
   let ings = "";
   d.ings.forEach(function(i){ ings += '<span>' + esc(i) + '</span>'; });
-  const thumb = d.img ? '<img class="thumb" src="' + d.img + '" alt="' + esc(d.name) + '" loading="lazy">' : '';
+  const thumb = d.img ? '<img class="thumb" src="' + (d.thumb || d.img) + '" data-full="' + d.img + '" alt="' + esc(d.name) + '" loading="lazy">' : '';
   let note = "";
   if (item.badge === "caution" && mode === "avoid") {
     note = '<div class="note">' + T("noteA1") + '<b>' + T("noteA2") + '</b>: ' + item.rows.map(function(r){ return esc(r.a); }).join(", ") + T("noteA3") + '</div>';
@@ -626,7 +644,7 @@ $results.addEventListener("click", function(e){
 const $lbx = document.getElementById("lightbox");
 $results.addEventListener("click", function(e){
   if (e.target && e.target.classList && e.target.classList.contains("thumb")) {
-    document.getElementById("lightboxImg").src = e.target.src;
+    document.getElementById("lightboxImg").src = e.target.dataset.full || e.target.src;
     document.getElementById("lightboxImg").alt = e.target.alt;
     $lbx.classList.add("on");
   }
