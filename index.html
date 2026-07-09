@@ -177,14 +177,23 @@ const DATA = {
       "sub": "Allergen Guide · Server Reference", "placeholder": "Search allergen, ingredient, or dish…", "modeC": "Contains allergen", "modeA": "Safe from allergen", "hint0": "Tap an allergen or type to search. “Safe from” shows dishes you can offer a guest with that allergy.", "hintC": "Showing dishes that CONTAIN what you search.", "hintA": "Showing dishes SAFE for a guest with that allergy. ⚠ = cross-contact risk only.", "of": "of", "dishesW": "dishes", "contain": "contain", "freeOf": "are safe from", "avoidNote": " (⚠ = cross-contact only — verify with kitchen)", "count0": "dishes · tap any card for ingredients, allergens & pairings", "badgeC": "Contains", "badgeS": "✓ Safe", "badgeW": "⚠ Cross-contact", "cc": "⚠ cross-contact", "noteA1": "⚠ No direct allergen, but ", "noteA2": "cross-contact risk", "noteA3": " (shared fryer/grill). Check with the guest and kitchen.", "ing": "Ingredients", "alg": "Allergens", "pairT": "Pairings — Upsell", "w": "White", "r": "Red", "sk": "Sake", "e1": "No fully safe dishes found", "e1b": "Every dish has this allergen or a cross-contact risk. Talk to the kitchen about modifications.", "e2": "No matches", "e2b": "Try another spelling, or tap an allergen chip above.", "ft1": "⚠ Always confirm with the kitchen / chef before guaranteeing any dish is allergen-safe.", "ft2": "Cross-contact flags (shared fryer vat / grill station) mean the item may contain traces — check in with the guest and the kitchen. Source: Patrick's Weekly Knowledge posts, Feb–Jun 2026. Menu items change; verify against the current menu.", "title": "Japonessa · Allergen Guide"
     }, 
     "cats": ["KITCHEN", "RAW BAR", "SIGNATURE ROLLS"], 
-    "dishes": [
+    "dishes": [ 
+       
       {
-        "name": "Tempura Udon Soup", 
+        "name": "Seaweed Salad", 
         "cat": "KITCHEN", 
-        "ings": ["Dashi stock", "Udon wheat noodles", "Blanched asparagus", "Fish cake", "Tempura shrimp", "Onsen egg (optional)"], 
-        "alg": [{"a": "Gluten", "s": "Udon noodles, fish cake, tempura shrimp"}, {"a": "Egg", "s": "Onsen egg (optional)"}, {"a": "Soy", "s": "Fish cake"}, {"a": "Fish", "s": "Dashi stock, fish cake"}, {"a": "Shellfish", "s": "Tempura shrimp, fish cake"}, {"a": "Shrimp", "s": "Tempura shrimp"}], 
-        "pair": {"w": "Sauvignon Blanc or Albariño — crisp acidity cuts the broth's richness.", "r": "Pinot Noir — light body, low tannin, won't overwhelm the dish.", "s": "Dry Junmai — umami complements the broth without overwhelming the noodles."}, 
-        "img": "https://d1w7312wesee68.cloudfront.net/Sm5uEoSqiRJKxDwpdEAglDrYhLRtvLn0Pu1NbRZevmI/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/aac7f312-17b5-4f42-beb1-8984e1d051c0.jpg"
+        "ings": ["Seaweed mix", "Sesame seeds", "Lemon garnish", "Miso vinaigrette"], 
+        "alg": [{"a": "Gluten", "s": "Seaweed mix, miso vinaigrette"}, {"a": "Egg", "s": "Miso vinaigrette"}, {"a": "Soy", "s": "Seaweed mix, miso vinaigrette"}, {"a": "Mushroom", "s": "Seaweed mix — check with guest", "cc": true}, {"a": "Citrus", "s": "Lemon garnish"}, {"a": "Rice", "s": "Miso vinaigrette"}, {"a": "Sesame", "s": "Seaweed mix, sesame seeds"}], 
+        "pair": {"w": "Sauvignon Blanc, Albariño, or dry Riesling — crisp, mineral-forward.", "r": "Pinot Noir — light body, high acid, low tannin, earthy notes.", "s": "Light dry Junmai or Junmai Ginjo, chilled; sparkling sake also excellent."}, 
+        "img": "https://d1w7312wesee68.cloudfront.net/PhsyvrlXWLsoRDepDzuM3cfsX-uZOX-Jp7_r0lZ6u9A/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/e4671ade-9423-4716-96d4-28e0b82b3b72.jpg"
+      },
+      {
+        "name": "Calamari Salad", 
+        "cat": "KITCHEN", 
+        "ings": ["Fried calamari", "Sweet chili sauce", "Assorted greens", "Yuzu aioli", "Cherry tomatoes", "Cucumber", "Orange slice"], 
+        "alg": [{"a": "Gluten", "s": "Yuzu aioli, sweet chili sauce"}, {"a": "Soy", "s": "Yuzu aioli, sweet chili sauce"}, {"a": "Fish", "s": "Yuzu aioli"}, {"a": "Shellfish", "s": "Calamari (squid)"}, {"a": "Citrus", "s": "Orange slice, yuzu aioli"}, {"a": "Nightshade", "s": "Sweet chili sauce, cherry tomatoes"}, {"a": "Rapeseed", "s": "Sweet chili sauce, yuzu aioli, calamari (fryer oil is canola)", "cc": true}, {"a": "Onion", "s": "Yuzu aioli"}, {"a": "Rice", "s": "Yuzu aioli"}, {"a": "Sesame", "s": "Sweet chili sauce, yuzu aioli"}, {"a": "Garlic", "s": "Sweet chili sauce"}], 
+        "pair": {"w": "Pinot Grigio or Sauvignon Blanc; Prosecco for a bubbly contrast.", "r": "Pinot Noir or dry rosé — light, low tannin, won't overpower the squid.", "s": "Crisp dry Junmai Ginjo (Dewazakura) or earthy Yamahai Junmai; creamy nigori for the finish."}, 
+        "img": "https://d1w7312wesee68.cloudfront.net/_LXPO61JyF2OkNBBpppsb9Mpmw2xoOQ8V0gbxayNse8/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/61d7af74-0f61-4c6b-8a07-7402015a5c0a.jpg"
       }, 
       {
         "name": "Takoyaki", 
@@ -195,13 +204,6 @@ const DATA = {
         "img": "https://d1w7312wesee68.cloudfront.net/91AHTniIwAL46WMYPrJNl8H7g5tk9UU5_telKBN4Of4/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/70d301b3-b4f4-4338-88e0-b22cc608a195.jpg"
       }, 
       {
-        "name": "Sukiyaki Beef Soup", 
-        "cat": "KITCHEN", 
-        "ings": ["Soy broth", "Sukiyaki beef", "Elephant yam noodle", "Nappa cabbage", "White onion", "Steamed tofu", "Green onion", "Onsen egg (optional)"], 
-        "alg": [{"a": "Gluten", "s": "Soy broth, sukiyaki beef"}, {"a": "Egg", "s": "Onsen egg (optional)"}, {"a": "Soy", "s": "Soy broth, sukiyaki beef, steamed tofu"}, {"a": "Fish", "s": "Soy broth, sukiyaki beef"}, {"a": "Onion", "s": "White onion, sukiyaki beef"}, {"a": "Rice", "s": "Soy broth"}], 
-        "pair": {"w": "Riesling (dry or off-dry), Pinot Gris, or lightly oaked Chardonnay.", "r": "Pinot Noir, semi-dry red blend, or light Merlot — fruit-forward, gentle tannins.", "s": "Full-bodied Junmai/Ginjo or Yamahai/Kimoto — stands up to rich soy broth and beef fat."}
-      }, 
-      {
         "name": "Agedashi Tofu", 
         "cat": "KITCHEN", 
         "ings": ["Medium-textured fried tofu", "Scallion", "Bonito flakes", "Dashi broth"], 
@@ -210,43 +212,12 @@ const DATA = {
         "img": "https://d1w7312wesee68.cloudfront.net/CuOAeI4ZClKuD9P6v4JPBV4WtfgwZ3w7xOy9iOLZvbg/resize:fit:1080:1080/plain/s3://toasttab/restaurants/restaurant-189440000000000000/menu/items/4/item-1100000000066961364_1722295991.jpg"
       }, 
       {
-        "name": "Tempura Plate", 
-        "cat": "KITCHEN", 
-        "ings": ["Tempura veggies (white onion, Japanese pumpkin, asparagus, shiitake)", "Tempura shrimp", "Ground daikon radish", "Dashi broth"], 
-        "alg": [{"a": "Gluten", "s": "Tempura batter; fried in same vat as gluten products"}, {"a": "Soy", "s": "Fried in same vat as soy products", "cc": true}, {"a": "Fish", "s": "Dashi stock; fried in same vat as fish products", "cc": true}, {"a": "Shellfish", "s": "Tempura shrimp; fried in same vat as shellfish products", "cc": true}, {"a": "Shrimp", "s": "Tempura shrimp; fried in same vat as shrimp products", "cc": true}, {"a": "Mushroom", "s": "Shiitake mushroom (tempura veggies)"}, {"a": "Onion", "s": "White onion; fried in same vat as onion products", "cc": true}, {"a": "Rice", "s": "Fried in same vat as rice products", "cc": true}], 
-        "pair": {"w": "Sparkling (Cava, blanc de blancs, brut), Sauvignon Blanc, or oaky Chardonnay.", "r": "Malbec or medium-bodied Cabernet Sauvignon — tannins cut fried flavors.", "s": "Dry, acidic nama or undiluted genshu sake."}, 
-        "img": "https://d1w7312wesee68.cloudfront.net/hp3g0didDI3FKgMkDHYIsWz0zUxipUyjk2Jv6Wdap0s/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/23b863fc-0d51-478a-bc16-210032abd186.jpg"
-      }, 
-      {
         "name": "Garlic Short Ribs", 
         "cat": "KITCHEN", 
         "ings": ["Marinated beef short ribs", "Teriyaki sauce (contains beef stock)", "Sesame seeds", "Scallions", "Sliced orange", "Garlic"], 
         "alg": [{"a": "Gluten", "s": "Beef ribs, teriyaki sauce"}, {"a": "Soy", "s": "Beef ribs, teriyaki sauce, grill spray"}, {"a": "Fish", "s": "Grilled on same station as fish", "cc": true}, {"a": "Citrus", "s": "Orange garnish"}, {"a": "Onion", "s": "Teriyaki sauce, scallions"}, {"a": "Rice", "s": "Beef ribs (mirin and sake in marinade)", "cc": true}, {"a": "Corn", "s": "Teriyaki sauce"}, {"a": "Sesame", "s": "Sesame seeds, beef ribs"}, {"a": "Garlic", "s": "Garlic marinade (signature ingredient)"}], 
         "pair": {"w": "Full-bodied oaked Chardonnay, dry Riesling, or Albariño — acidity cuts the richness.", "r": "Syrah (savory pepper notes), Cabernet Sauvignon, or Malbec — tannins cut fat.", "s": "Kimoto/Yamahai, Junmai, or full-flavored genshu — robust, high acid."}, 
         "img": "https://d1w7312wesee68.cloudfront.net/Q-asao4255uSKZKxdNZmMHwuQiJQAlZ2s9kxsvzQ3aQ/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/73d65677-cd82-4c84-8063-0a2f8cfa640c.jpg"
-      }, 
-      {
-        "name": "Seaweed Salad", 
-        "cat": "KITCHEN", 
-        "ings": ["Seaweed mix", "Sesame seeds", "Lemon garnish", "Miso vinaigrette"], 
-        "alg": [{"a": "Gluten", "s": "Seaweed mix, miso vinaigrette"}, {"a": "Egg", "s": "Miso vinaigrette"}, {"a": "Soy", "s": "Seaweed mix, miso vinaigrette"}, {"a": "Mushroom", "s": "Seaweed mix — check with guest", "cc": true}, {"a": "Citrus", "s": "Lemon garnish"}, {"a": "Rice", "s": "Miso vinaigrette"}, {"a": "Sesame", "s": "Seaweed mix, sesame seeds"}], 
-        "pair": {"w": "Sauvignon Blanc, Albariño, or dry Riesling — crisp, mineral-forward.", "r": "Pinot Noir — light body, high acid, low tannin, earthy notes.", "s": "Light dry Junmai or Junmai Ginjo, chilled; sparkling sake also excellent."}, 
-        "img": "https://d1w7312wesee68.cloudfront.net/PhsyvrlXWLsoRDepDzuM3cfsX-uZOX-Jp7_r0lZ6u9A/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/e4671ade-9423-4716-96d4-28e0b82b3b72.jpg"
-      }, 
-      {
-        "name": "Calamari Salad", 
-        "cat": "KITCHEN", 
-        "ings": ["Fried calamari", "Sweet chili sauce", "Assorted greens", "Yuzu aioli", "Cherry tomatoes", "Cucumber", "Orange slice"], 
-        "alg": [{"a": "Gluten", "s": "Yuzu aioli, sweet chili sauce"}, {"a": "Soy", "s": "Yuzu aioli, sweet chili sauce"}, {"a": "Fish", "s": "Yuzu aioli"}, {"a": "Shellfish", "s": "Calamari (squid)"}, {"a": "Citrus", "s": "Orange slice, yuzu aioli"}, {"a": "Nightshade", "s": "Sweet chili sauce, cherry tomatoes"}, {"a": "Rapeseed", "s": "Sweet chili sauce, yuzu aioli, calamari (fryer oil is canola)", "cc": true}, {"a": "Onion", "s": "Yuzu aioli"}, {"a": "Rice", "s": "Yuzu aioli"}, {"a": "Sesame", "s": "Sweet chili sauce, yuzu aioli"}, {"a": "Garlic", "s": "Sweet chili sauce"}], 
-        "pair": {"w": "Pinot Grigio or Sauvignon Blanc; Prosecco for a bubbly contrast.", "r": "Pinot Noir or dry rosé — light, low tannin, won't overpower the squid.", "s": "Crisp dry Junmai Ginjo (Dewazakura) or earthy Yamahai Junmai; creamy nigori for the finish."}, 
-        "img": "https://d1w7312wesee68.cloudfront.net/_LXPO61JyF2OkNBBpppsb9Mpmw2xoOQ8V0gbxayNse8/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/61d7af74-0f61-4c6b-8a07-7402015a5c0a.jpg"
-      }, 
-      {
-        "name": "Spicy Chorizo Ramen", 
-        "cat": "KITCHEN", 
-        "ings": ["Creamy pork broth", "Itokiri togarashi", "Wheat/egg noodles", "Corn", "Scallion", "Bamboo shoots", "Chorizo", "Dried chili", "Onsen egg (optional)"], 
-        "alg": [{"a": "Gluten", "s": "Creamy pork broth, wheat/egg noodles, bamboo shoots"}, {"a": "Egg", "s": "Wheat/egg noodles, onsen egg"}, {"a": "Soy", "s": "Creamy pork broth, bamboo shoots"}, {"a": "Citrus", "s": "Itokiri togarashi"}, {"a": "Nightshade", "s": "Itokiri togarashi, dried chili"}, {"a": "Rapeseed", "s": "Wheat/egg noodles"}, {"a": "Onion", "s": "Scallion, bamboo shoots"}, {"a": "Pork", "s": "Creamy pork broth, chorizo"}, {"a": "Corn", "s": "Corn, chorizo"}, {"a": "Sesame", "s": "Creamy pork broth, bamboo shoots, itokiri togarashi"}, {"a": "Garlic", "s": "Creamy pork broth, chorizo"}, {"a": "Dairy", "s": "Creamy pork broth"}, {"a": "Ginger", "s": "Creamy pork broth, itokiri togarashi"}], 
-        "pair": {"w": "Riesling, Pinot Gris, or oaked Chardonnay — balances the rich, fatty, spicy broth.", "r": "Pinot Noir or red blends — bright cherry/berry notes cut through pork fat.", "s": "Full-bodied high-acid Junmai or creamy Nigori (Joto Junmai Nigori, Sujin Junmai)."}
       }, 
       {
         "name": "Ginger Chicken", 
@@ -264,6 +235,29 @@ const DATA = {
         "pair": {"w": "Champagne / traditional-method sparkling, unoaked Chardonnay, or semi-dry Riesling.", "r": "Pinot Noir or Merlot — light, low tannin, matches the brie's earthy creaminess.", "s": "Light aromatic Junmai Ginjo (Dewazakura) or Daiginjo — cuts the fried oil."}, 
         "img": "https://d1w7312wesee68.cloudfront.net/IflcSq32tw7lo3CvVj-tmdcKpiz99etcLRfEgzIcTNE/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/cab19bc2-c465-44a6-ad83-d6ade00d947b.jpg"
       }, 
+      {
+        "name": "Tempura Plate", 
+        "cat": "KITCHEN", 
+        "ings": ["Tempura veggies (white onion, Japanese pumpkin, asparagus, shiitake)", "Tempura shrimp", "Ground daikon radish", "Dashi broth"], 
+        "alg": [{"a": "Gluten", "s": "Tempura batter; fried in same vat as gluten products"}, {"a": "Soy", "s": "Fried in same vat as soy products", "cc": true}, {"a": "Fish", "s": "Dashi stock; fried in same vat as fish products", "cc": true}, {"a": "Shellfish", "s": "Tempura shrimp; fried in same vat as shellfish products", "cc": true}, {"a": "Shrimp", "s": "Tempura shrimp; fried in same vat as shrimp products", "cc": true}, {"a": "Mushroom", "s": "Shiitake mushroom (tempura veggies)"}, {"a": "Onion", "s": "White onion; fried in same vat as onion products", "cc": true}, {"a": "Rice", "s": "Fried in same vat as rice products", "cc": true}], 
+        "pair": {"w": "Sparkling (Cava, blanc de blancs, brut), Sauvignon Blanc, or oaky Chardonnay.", "r": "Malbec or medium-bodied Cabernet Sauvignon — tannins cut fried flavors.", "s": "Dry, acidic nama or undiluted genshu sake."}, 
+        "img": "https://d1w7312wesee68.cloudfront.net/hp3g0didDI3FKgMkDHYIsWz0zUxipUyjk2Jv6Wdap0s/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/23b863fc-0d51-478a-bc16-210032abd186.jpg"
+      },
+      {
+        "name": "Tempura Udon Soup", 
+        "cat": "KITCHEN", 
+        "ings": ["Dashi stock", "Udon wheat noodles", "Blanched asparagus", "Fish cake", "Tempura shrimp", "Onsen egg (optional)"], 
+        "alg": [{"a": "Gluten", "s": "Udon noodles, fish cake, tempura shrimp"}, {"a": "Egg", "s": "Onsen egg (optional)"}, {"a": "Soy", "s": "Fish cake"}, {"a": "Fish", "s": "Dashi stock, fish cake"}, {"a": "Shellfish", "s": "Tempura shrimp, fish cake"}, {"a": "Shrimp", "s": "Tempura shrimp"}], 
+        "pair": {"w": "Sauvignon Blanc or Albariño — crisp acidity cuts the broth's richness.", "r": "Pinot Noir — light body, low tannin, won't overwhelm the dish.", "s": "Dry Junmai — umami complements the broth without overwhelming the noodles."}, 
+        "img": "https://d1w7312wesee68.cloudfront.net/Sm5uEoSqiRJKxDwpdEAglDrYhLRtvLn0Pu1NbRZevmI/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/aac7f312-17b5-4f42-beb1-8984e1d051c0.jpg"
+      },
+      {
+        "name": "Spicy Chorizo Ramen", 
+        "cat": "KITCHEN", 
+        "ings": ["Creamy pork broth", "Itokiri togarashi", "Wheat/egg noodles", "Corn", "Scallion", "Bamboo shoots", "Chorizo", "Dried chili", "Onsen egg (optional)"], 
+        "alg": [{"a": "Gluten", "s": "Creamy pork broth, wheat/egg noodles, bamboo shoots"}, {"a": "Egg", "s": "Wheat/egg noodles, onsen egg"}, {"a": "Soy", "s": "Creamy pork broth, bamboo shoots"}, {"a": "Citrus", "s": "Itokiri togarashi"}, {"a": "Nightshade", "s": "Itokiri togarashi, dried chili"}, {"a": "Rapeseed", "s": "Wheat/egg noodles"}, {"a": "Onion", "s": "Scallion, bamboo shoots"}, {"a": "Pork", "s": "Creamy pork broth, chorizo"}, {"a": "Corn", "s": "Corn, chorizo"}, {"a": "Sesame", "s": "Creamy pork broth, bamboo shoots, itokiri togarashi"}, {"a": "Garlic", "s": "Creamy pork broth, chorizo"}, {"a": "Dairy", "s": "Creamy pork broth"}, {"a": "Ginger", "s": "Creamy pork broth, itokiri togarashi"}], 
+        "pair": {"w": "Riesling, Pinot Gris, or oaked Chardonnay — balances the rich, fatty, spicy broth.", "r": "Pinot Noir or red blends — bright cherry/berry notes cut through pork fat.", "s": "Full-bodied high-acid Junmai or creamy Nigori (Joto Junmai Nigori, Sujin Junmai)."}
+      },
       {
         "name": "Scallop Ceviche", 
         "cat": "RAW BAR", 
@@ -289,7 +283,7 @@ const DATA = {
         "img": "https://d1w7312wesee68.cloudfront.net/icCSN98A-sjUumIN8o7hWAvspDeQrQKDFIJcrRq1eCI/resize:fit:1080:1080/plain/s3://toasttab/restaurants/restaurant-189440000000000000/menu/items/6/item-1100000000066961466_1722284643.jpg"
       }, 
       {
-        "name": "Sukiyaki Tacos", 
+        "name": "Sukiyaki Beef Tacos", 
         "cat": "KITCHEN", 
         "ings": ["Sukiyaki beef", "Flour tortillas", "Pico de gallo", "Fried scallions", "Chipotle guajillo sauce", "Lime garnish"], 
         "alg": [{"a": "Gluten", "s": "Tortillas, chipotle guajillo sauce, sukiyaki beef; scallions fried in same vat as gluten"}, {"a": "Soy", "s": "Sukiyaki beef; scallions fried in soybean oil — clarify with guest", "cc": true}, {"a": "Fish", "s": "Sukiyaki beef; scallions fried in same vat as fish products", "cc": true}, {"a": "Shellfish", "s": "Scallions fried in same vat as shellfish products", "cc": true}, {"a": "Shrimp", "s": "Scallions fried in same vat as shrimp products", "cc": true}, {"a": "Mushroom", "s": "Scallions fried in same vat as mushroom products", "cc": true}, {"a": "Citrus", "s": "Pico de gallo, chipotle guajillo sauce, lime garnish"}, {"a": "Nightshade", "s": "Pico de gallo, chipotle guajillo sauce"}, {"a": "Onion", "s": "Pico de gallo, fried scallions, sukiyaki beef, chipotle guajillo sauce"}, {"a": "Rice", "s": "Scallions fried in same vat as rice products", "cc": true}, {"a": "Corn", "s": "Chipotle guajillo sauce; scallions fried in same vat as corn products", "cc": true}, {"a": "Garlic", "s": "Chipotle guajillo sauce"}], 
@@ -338,60 +332,13 @@ const DATA = {
     "cats": ["KITCHEN", "BARRA FRÍA", "ROLLOS ESPECIALES"], 
     "dishes": [
       {
-        "name": "Tempura Udon Soup", 
-        "cat": "KITCHEN", 
-        "ings": ["Caldo dashi", "Fideos udon de trigo", "Espárragos blanqueados", "Pastel de pescado", "Camarón tempura", "Huevo onsen (opcional)"], 
-        "alg": [{"a": "Gluten", "s": "Fideos udon, pastel de pescado, camarón tempura"}, {"a": "Huevo", "s": "Huevo onsen (opcional)"}, {"a": "Soya", "s": "Pastel de pescado"}, {"a": "Pescado", "s": "Caldo dashi, pastel de pescado"}, {"a": "Mariscos", "s": "Camarón tempura, pastel de pescado"}, {"a": "Camarón", "s": "Camarón tempura"}], 
-        "pair": {"w": "Sauvignon Blanc o Albariño — su acidez fresca corta la riqueza del caldo.", "r": "Pinot Noir — cuerpo ligero y taninos bajos; no domina el platillo.", "s": "Junmai seco — su umami complementa el caldo sin opacar los fideos."}, 
-        "img": "https://d1w7312wesee68.cloudfront.net/Sm5uEoSqiRJKxDwpdEAglDrYhLRtvLn0Pu1NbRZevmI/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/aac7f312-17b5-4f42-beb1-8984e1d051c0.jpg"
-      }, 
-      {
-        "name": "Takoyaki", 
-        "cat": "KITCHEN", 
-        "ings": ["Bolita de takoyaki (pulpo)", "Mayonesa japonesa Kewpie", "Salsa takoyaki", "Jengibre rojo encurtido (kizami)", "Hojuelas de bonito"], 
-        "alg": [{"a": "Gluten", "s": "Bolita de takoyaki, salsa takoyaki"}, {"a": "Huevo", "s": "Bolita de takoyaki, mayonesa Kewpie"}, {"a": "Soya", "s": "Salsa takoyaki, mayonesa Kewpie (aceite de soya — la mayoría lo tolera, pero confírmalo con el cliente)", "cc": true}, {"a": "Pescado", "s": "Hojuelas de bonito"}, {"a": "Mariscos", "s": "Bolita de takoyaki (pulpo)"}, {"a": "Cítricos", "s": "Jengibre encurtido, salsa takoyaki"}, {"a": "Fruta de hueso", "s": "Salsa takoyaki"}, {"a": "Solanáceas", "s": "Salsa takoyaki"}, {"a": "Canola", "s": "Mayonesa Kewpie"}], 
-        "pair": {"w": "Sauvignon Blanc o Riesling seco — cortan el umami intenso; el dulzor del Riesling lo equilibra.", "r": "Mezcla tinta frutal o Pinot Noir — cuerpo ligero que equilibra todo el platillo.", "s": "Nama sake con cuerpo o Junmai — saben mejor al acercarse a temperatura ambiente."}, 
-        "img": "https://d1w7312wesee68.cloudfront.net/91AHTniIwAL46WMYPrJNl8H7g5tk9UU5_telKBN4Of4/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/70d301b3-b4f4-4338-88e0-b22cc608a195.jpg"
-      }, 
-      {
-        "name": "Sukiyaki Beef Soup", 
-        "cat": "KITCHEN", 
-        "ings": ["Caldo de soya", "Res sukiyaki", "Fideo de ñame", "Col napa", "Cebolla blanca", "Tofu al vapor", "Cebolla de cambray", "Huevo onsen (opcional)"], 
-        "alg": [{"a": "Gluten", "s": "Caldo de soya, res sukiyaki"}, {"a": "Huevo", "s": "Huevo onsen (opcional)"}, {"a": "Soya", "s": "Caldo de soya, res sukiyaki, tofu al vapor"}, {"a": "Pescado", "s": "Caldo de soya, res sukiyaki"}, {"a": "Cebolla", "s": "Cebolla blanca, res sukiyaki"}, {"a": "Arroz", "s": "Caldo de soya"}], 
-        "pair": {"w": "Riesling (seco o semiseco), Pinot Gris o Chardonnay con roble ligero.", "r": "Pinot Noir, mezcla tinta semiseca o Merlot ligero — frutales, taninos suaves.", "s": "Junmai/Ginjo con cuerpo o Yamahai/Kimoto — resisten el caldo dulce-salado y la grasa de la res."}
-      }, 
-      {
-        "name": "Agedashi Tofu", 
-        "cat": "KITCHEN", 
-        "ings": ["Tofu frito de textura media", "Cebollín", "Hojuelas de bonito", "Caldo dashi"], 
-        "alg": [{"a": "Gluten", "s": "Tofu frito en la misma freidora que productos con gluten", "cc": true}, {"a": "Soya", "s": "Tofu de textura media"}, {"a": "Pescado", "s": "Hojuelas de bonito, caldo dashi; frito en la misma freidora que pescado", "cc": true}, {"a": "Mariscos", "s": "Frito en la misma freidora que mariscos", "cc": true}, {"a": "Cebolla", "s": "Cebollín; frito en la misma freidora que productos con cebolla", "cc": true}, {"a": "Arroz", "s": "Frito en la misma freidora que productos con arroz", "cc": true}], 
-        "pair": {"w": "Espumosos (Cava, blanc de blancs, Champagne brut), Sauvignon Blanc o Riesling seco.", "r": "Pinot Noir suave de taninos bajos o mezcla tinta frutal semiseca.", "s": "Junmai Ginjo ligero y aromático o Junmai Daiginjo equilibrado."}, 
-        "img": "https://d1w7312wesee68.cloudfront.net/CuOAeI4ZClKuD9P6v4JPBV4WtfgwZ3w7xOy9iOLZvbg/resize:fit:1080:1080/plain/s3://toasttab/restaurants/restaurant-189440000000000000/menu/items/4/item-1100000000066961364_1722295991.jpg"
-      }, 
-      {
-        "name": "Tempura Plate", 
-        "cat": "KITCHEN", 
-        "ings": ["Verduras tempura (cebolla blanca, calabaza japonesa, espárrago, shiitake)", "Camarón tempura", "Daikon rallado", "Caldo dashi"], 
-        "alg": [{"a": "Gluten", "s": "Empanizado tempura; frito en la misma freidora que productos con gluten"}, {"a": "Soya", "s": "Frito en la misma freidora que productos con soya", "cc": true}, {"a": "Pescado", "s": "Caldo dashi; frito en la misma freidora que pescado", "cc": true}, {"a": "Mariscos", "s": "Camarón tempura; frito en la misma freidora que mariscos", "cc": true}, {"a": "Camarón", "s": "Camarón tempura; frito en la misma freidora que camarón", "cc": true}, {"a": "Hongos", "s": "Shiitake (verduras tempura)"}, {"a": "Cebolla", "s": "Cebolla blanca; frito en la misma freidora que cebolla", "cc": true}, {"a": "Arroz", "s": "Frito en la misma freidora que productos con arroz", "cc": true}], 
-        "pair": {"w": "Espumosos (Cava, blanc de blancs, brut), Sauvignon Blanc o Chardonnay con roble.", "r": "Malbec o Cabernet Sauvignon de cuerpo medio — los taninos cortan lo frito.", "s": "Nama seco y ácido o genshu sin diluir — aguantan los sabores fritos."}, 
-        "img": "https://d1w7312wesee68.cloudfront.net/hp3g0didDI3FKgMkDHYIsWz0zUxipUyjk2Jv6Wdap0s/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/23b863fc-0d51-478a-bc16-210032abd186.jpg"
-      }, 
-      {
-        "name": "Garlic Short Ribs", 
-        "cat": "KITCHEN", 
-        "ings": ["Costillas de res marinadas", "Salsa teriyaki (contiene caldo de res)", "Ajonjolí", "Cebollín", "Naranja en rodaja", "Ajo"], 
-        "alg": [{"a": "Gluten", "s": "Costillas de res, salsa teriyaki"}, {"a": "Soya", "s": "Costillas, salsa teriyaki, aerosol de la parrilla"}, {"a": "Pescado", "s": "Asado en la misma plancha que pescado", "cc": true}, {"a": "Cítricos", "s": "Naranja de guarnición"}, {"a": "Cebolla", "s": "Salsa teriyaki, cebollín"}, {"a": "Arroz", "s": "Costillas (mirin y sake en el marinado)", "cc": true}, {"a": "Maíz", "s": "Salsa teriyaki"}, {"a": "Ajonjolí", "s": "Semillas de ajonjolí, costillas"}, {"a": "Ajo", "s": "Marinado de ajo (ingrediente estrella)"}], 
-        "pair": {"w": "Chardonnay con roble, Riesling seco o Albariño — la acidez corta la grasa y el ajo.", "r": "Syrah (notas de pimienta), Cabernet Sauvignon o Malbec — taninos que cortan la grasa.", "s": "Kimoto/Yamahai, Junmai o genshu sin diluir — robustos y de alta acidez."}, 
-        "img": "https://d1w7312wesee68.cloudfront.net/Q-asao4255uSKZKxdNZmMHwuQiJQAlZ2s9kxsvzQ3aQ/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/73d65677-cd82-4c84-8063-0a2f8cfa640c.jpg"
-      }, 
-      {
         "name": "Seaweed Salad", 
         "cat": "KITCHEN", 
         "ings": ["Mezcla de algas", "Ajonjolí", "Limón amarillo", "Vinagreta de miso"], 
         "alg": [{"a": "Gluten", "s": "Mezcla de algas, vinagreta de miso"}, {"a": "Huevo", "s": "Vinagreta de miso"}, {"a": "Soya", "s": "Mezcla de algas, vinagreta de miso"}, {"a": "Hongos", "s": "Mezcla de algas — confírmalo con el cliente", "cc": true}, {"a": "Cítricos", "s": "Limón de guarnición"}, {"a": "Arroz", "s": "Vinagreta de miso"}, {"a": "Ajonjolí", "s": "Mezcla de algas, semillas de ajonjolí"}], 
         "pair": {"w": "Sauvignon Blanc, Albariño o Riesling seco — frescos, ácidos y minerales.", "r": "Pinot Noir — ligero, ácido, taninos bajos, con notas terrosas.", "s": "Junmai o Junmai Ginjo seco y frío; un sake espumoso también va excelente."}, 
         "img": "https://d1w7312wesee68.cloudfront.net/PhsyvrlXWLsoRDepDzuM3cfsX-uZOX-Jp7_r0lZ6u9A/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/e4671ade-9423-4716-96d4-28e0b82b3b72.jpg"
-      }, 
+      },       
       {
         "name": "Calamari Salad", 
         "cat": "KITCHEN", 
@@ -401,12 +348,29 @@ const DATA = {
         "img": "https://d1w7312wesee68.cloudfront.net/_LXPO61JyF2OkNBBpppsb9Mpmw2xoOQ8V0gbxayNse8/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/61d7af74-0f61-4c6b-8a07-7402015a5c0a.jpg"
       }, 
       {
-        "name": "Spicy Chorizo Ramen", 
+        "name": "Takoyaki", 
         "cat": "KITCHEN", 
-        "ings": ["Caldo cremoso de cerdo", "Togarashi itokiri", "Fideos de trigo y huevo", "Maíz", "Cebollín", "Brotes de bambú", "Chorizo", "Chile seco", "Huevo onsen (opcional)"], 
-        "alg": [{"a": "Gluten", "s": "Caldo cremoso de cerdo, fideos de trigo y huevo, brotes de bambú"}, {"a": "Huevo", "s": "Fideos de trigo y huevo, huevo onsen"}, {"a": "Soya", "s": "Caldo cremoso de cerdo, brotes de bambú"}, {"a": "Cítricos", "s": "Togarashi itokiri"}, {"a": "Solanáceas", "s": "Togarashi itokiri, chile seco"}, {"a": "Canola", "s": "Fideos de trigo y huevo"}, {"a": "Cebolla", "s": "Cebollín, brotes de bambú"}, {"a": "Cerdo", "s": "Caldo cremoso de cerdo, chorizo"}, {"a": "Maíz", "s": "Maíz, chorizo"}, {"a": "Ajonjolí", "s": "Caldo cremoso, brotes de bambú, togarashi itokiri"}, {"a": "Ajo", "s": "Caldo cremoso de cerdo, chorizo"}, {"a": "Lácteos", "s": "Caldo cremoso de cerdo"}, {"a": "Jengibre", "s": "Caldo cremoso de cerdo, togarashi itokiri"}], 
-        "pair": {"w": "Riesling, Pinot Gris o Chardonnay con roble — equilibran el caldo graso, salado y picante.", "r": "Pinot Noir o mezclas tintas — notas de cereza que cortan la grasa del cerdo.", "s": "Junmai de cuerpo y acidez alta o Nigori cremoso (Joto Junmai Nigori, Sujin Junmai)."}
+        "ings": ["Bolita de takoyaki (pulpo)", "Mayonesa japonesa Kewpie", "Salsa takoyaki", "Jengibre rojo encurtido (kizami)", "Hojuelas de bonito"], 
+        "alg": [{"a": "Gluten", "s": "Bolita de takoyaki, salsa takoyaki"}, {"a": "Huevo", "s": "Bolita de takoyaki, mayonesa Kewpie"}, {"a": "Soya", "s": "Salsa takoyaki, mayonesa Kewpie (aceite de soya — la mayoría lo tolera, pero confírmalo con el cliente)", "cc": true}, {"a": "Pescado", "s": "Hojuelas de bonito"}, {"a": "Mariscos", "s": "Bolita de takoyaki (pulpo)"}, {"a": "Cítricos", "s": "Jengibre encurtido, salsa takoyaki"}, {"a": "Fruta de hueso", "s": "Salsa takoyaki"}, {"a": "Solanáceas", "s": "Salsa takoyaki"}, {"a": "Canola", "s": "Mayonesa Kewpie"}], 
+        "pair": {"w": "Sauvignon Blanc o Riesling seco — cortan el umami intenso; el dulzor del Riesling lo equilibra.", "r": "Mezcla tinta frutal o Pinot Noir — cuerpo ligero que equilibra todo el platillo.", "s": "Nama sake con cuerpo o Junmai — saben mejor al acercarse a temperatura ambiente."}, 
+        "img": "https://d1w7312wesee68.cloudfront.net/91AHTniIwAL46WMYPrJNl8H7g5tk9UU5_telKBN4Of4/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/70d301b3-b4f4-4338-88e0-b22cc608a195.jpg"
+      },
+      {
+        "name": "Agedashi Tofu", 
+        "cat": "KITCHEN", 
+        "ings": ["Tofu frito de textura media", "Cebollín", "Hojuelas de bonito", "Caldo dashi"], 
+        "alg": [{"a": "Gluten", "s": "Tofu frito en la misma freidora que productos con gluten", "cc": true}, {"a": "Soya", "s": "Tofu de textura media"}, {"a": "Pescado", "s": "Hojuelas de bonito, caldo dashi; frito en la misma freidora que pescado", "cc": true}, {"a": "Mariscos", "s": "Frito en la misma freidora que mariscos", "cc": true}, {"a": "Cebolla", "s": "Cebollín; frito en la misma freidora que productos con cebolla", "cc": true}, {"a": "Arroz", "s": "Frito en la misma freidora que productos con arroz", "cc": true}], 
+        "pair": {"w": "Espumosos (Cava, blanc de blancs, Champagne brut), Sauvignon Blanc o Riesling seco.", "r": "Pinot Noir suave de taninos bajos o mezcla tinta frutal semiseca.", "s": "Junmai Ginjo ligero y aromático o Junmai Daiginjo equilibrado."}, 
+        "img": "https://d1w7312wesee68.cloudfront.net/CuOAeI4ZClKuD9P6v4JPBV4WtfgwZ3w7xOy9iOLZvbg/resize:fit:1080:1080/plain/s3://toasttab/restaurants/restaurant-189440000000000000/menu/items/4/item-1100000000066961364_1722295991.jpg"
       }, 
+      {
+        "name": "Garlic Short Ribs", 
+        "cat": "KITCHEN", 
+        "ings": ["Costillas de res marinadas", "Salsa teriyaki (contiene caldo de res)", "Ajonjolí", "Cebollín", "Naranja en rodaja", "Ajo"], 
+        "alg": [{"a": "Gluten", "s": "Costillas de res, salsa teriyaki"}, {"a": "Soya", "s": "Costillas, salsa teriyaki, aerosol de la parrilla"}, {"a": "Pescado", "s": "Asado en la misma plancha que pescado", "cc": true}, {"a": "Cítricos", "s": "Naranja de guarnición"}, {"a": "Cebolla", "s": "Salsa teriyaki, cebollín"}, {"a": "Arroz", "s": "Costillas (mirin y sake en el marinado)", "cc": true}, {"a": "Maíz", "s": "Salsa teriyaki"}, {"a": "Ajonjolí", "s": "Semillas de ajonjolí, costillas"}, {"a": "Ajo", "s": "Marinado de ajo (ingrediente estrella)"}], 
+        "pair": {"w": "Chardonnay con roble, Riesling seco o Albariño — la acidez corta la grasa y el ajo.", "r": "Syrah (notas de pimienta), Cabernet Sauvignon o Malbec — taninos que cortan la grasa.", "s": "Kimoto/Yamahai, Junmai o genshu sin diluir — robustos y de alta acidez."}, 
+        "img": "https://d1w7312wesee68.cloudfront.net/Q-asao4255uSKZKxdNZmMHwuQiJQAlZ2s9kxsvzQ3aQ/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/73d65677-cd82-4c84-8063-0a2f8cfa640c.jpg"
+      },
       {
         "name": "Ginger Chicken", 
         "cat": "KITCHEN", 
@@ -422,6 +386,29 @@ const DATA = {
         "alg": [{"a": "Gluten", "s": "Salsa de frambuesa, brie tempura"}, {"a": "Soya", "s": "Salsa de frambuesa, brie tempura"}, {"a": "Pescado", "s": "Frito en la misma freidora que pescado", "cc": true}, {"a": "Mariscos", "s": "Frito en la misma freidora que mariscos", "cc": true}, {"a": "Camarón", "s": "Frito en la misma freidora que camarón", "cc": true}, {"a": "Hongos", "s": "Frito en la misma freidora que hongos", "cc": true}, {"a": "Cebolla", "s": "Frito en la misma freidora que cebolla", "cc": true}, {"a": "Arroz", "s": "Frito en la misma freidora que productos con arroz", "cc": true}, {"a": "Maíz", "s": "Salsa de frambuesa, brie tempura"}, {"a": "Lácteos", "s": "Queso brie"}], 
         "pair": {"w": "Champagne o espumoso de método tradicional, Chardonnay sin roble o Riesling semiseco.", "r": "Pinot Noir o Merlot — ligeros y de taninos bajos, van con lo cremoso del brie.", "s": "Junmai Ginjo ligero (Dewazakura) o Daiginjo — cortan el aceite de la fritura."}, 
         "img": "https://d1w7312wesee68.cloudfront.net/IflcSq32tw7lo3CvVj-tmdcKpiz99etcLRfEgzIcTNE/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/cab19bc2-c465-44a6-ad83-d6ade00d947b.jpg"
+      }, 
+      {
+        "name": "Tempura Plate", 
+        "cat": "KITCHEN", 
+        "ings": ["Verduras tempura (cebolla blanca, calabaza japonesa, espárrago, shiitake)", "Camarón tempura", "Daikon rallado", "Caldo dashi"], 
+        "alg": [{"a": "Gluten", "s": "Empanizado tempura; frito en la misma freidora que productos con gluten"}, {"a": "Soya", "s": "Frito en la misma freidora que productos con soya", "cc": true}, {"a": "Pescado", "s": "Caldo dashi; frito en la misma freidora que pescado", "cc": true}, {"a": "Mariscos", "s": "Camarón tempura; frito en la misma freidora que mariscos", "cc": true}, {"a": "Camarón", "s": "Camarón tempura; frito en la misma freidora que camarón", "cc": true}, {"a": "Hongos", "s": "Shiitake (verduras tempura)"}, {"a": "Cebolla", "s": "Cebolla blanca; frito en la misma freidora que cebolla", "cc": true}, {"a": "Arroz", "s": "Frito en la misma freidora que productos con arroz", "cc": true}], 
+        "pair": {"w": "Espumosos (Cava, blanc de blancs, brut), Sauvignon Blanc o Chardonnay con roble.", "r": "Malbec o Cabernet Sauvignon de cuerpo medio — los taninos cortan lo frito.", "s": "Nama seco y ácido o genshu sin diluir — aguantan los sabores fritos."}, 
+        "img": "https://d1w7312wesee68.cloudfront.net/hp3g0didDI3FKgMkDHYIsWz0zUxipUyjk2Jv6Wdap0s/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/23b863fc-0d51-478a-bc16-210032abd186.jpg"
+      }, 
+      {
+        "name": "Tempura Udon Soup", 
+        "cat": "KITCHEN", 
+        "ings": ["Caldo dashi", "Fideos udon de trigo", "Espárragos blanqueados", "Pastel de pescado", "Camarón tempura", "Huevo onsen (opcional)"], 
+        "alg": [{"a": "Gluten", "s": "Fideos udon, pastel de pescado, camarón tempura"}, {"a": "Huevo", "s": "Huevo onsen (opcional)"}, {"a": "Soya", "s": "Pastel de pescado"}, {"a": "Pescado", "s": "Caldo dashi, pastel de pescado"}, {"a": "Mariscos", "s": "Camarón tempura, pastel de pescado"}, {"a": "Camarón", "s": "Camarón tempura"}], 
+        "pair": {"w": "Sauvignon Blanc o Albariño — su acidez fresca corta la riqueza del caldo.", "r": "Pinot Noir — cuerpo ligero y taninos bajos; no domina el platillo.", "s": "Junmai seco — su umami complementa el caldo sin opacar los fideos."}, 
+        "img": "https://d1w7312wesee68.cloudfront.net/Sm5uEoSqiRJKxDwpdEAglDrYhLRtvLn0Pu1NbRZevmI/resize:fit:1080:1080/plain/s3://toasttab/menu_service/restaurants/3d4c69ad-6484-48ce-8d6f-8d273c744f0d/MenuItem/aac7f312-17b5-4f42-beb1-8984e1d051c0.jpg"
+      }, 
+      {
+        "name": "Spicy Chorizo Ramen", 
+        "cat": "KITCHEN", 
+        "ings": ["Caldo cremoso de cerdo", "Togarashi itokiri", "Fideos de trigo y huevo", "Maíz", "Cebollín", "Brotes de bambú", "Chorizo", "Chile seco", "Huevo onsen (opcional)"], 
+        "alg": [{"a": "Gluten", "s": "Caldo cremoso de cerdo, fideos de trigo y huevo, brotes de bambú"}, {"a": "Huevo", "s": "Fideos de trigo y huevo, huevo onsen"}, {"a": "Soya", "s": "Caldo cremoso de cerdo, brotes de bambú"}, {"a": "Cítricos", "s": "Togarashi itokiri"}, {"a": "Solanáceas", "s": "Togarashi itokiri, chile seco"}, {"a": "Canola", "s": "Fideos de trigo y huevo"}, {"a": "Cebolla", "s": "Cebollín, brotes de bambú"}, {"a": "Cerdo", "s": "Caldo cremoso de cerdo, chorizo"}, {"a": "Maíz", "s": "Maíz, chorizo"}, {"a": "Ajonjolí", "s": "Caldo cremoso, brotes de bambú, togarashi itokiri"}, {"a": "Ajo", "s": "Caldo cremoso de cerdo, chorizo"}, {"a": "Lácteos", "s": "Caldo cremoso de cerdo"}, {"a": "Jengibre", "s": "Caldo cremoso de cerdo, togarashi itokiri"}], 
+        "pair": {"w": "Riesling, Pinot Gris o Chardonnay con roble — equilibran el caldo graso, salado y picante.", "r": "Pinot Noir o mezclas tintas — notas de cereza que cortan la grasa del cerdo.", "s": "Junmai de cuerpo y acidez alta o Nigori cremoso (Joto Junmai Nigori, Sujin Junmai)."}
       }, 
       {
         "name": "Scallop Ceviche", 
@@ -448,7 +435,7 @@ const DATA = {
         "img": "https://d1w7312wesee68.cloudfront.net/icCSN98A-sjUumIN8o7hWAvspDeQrQKDFIJcrRq1eCI/resize:fit:1080:1080/plain/s3://toasttab/restaurants/restaurant-189440000000000000/menu/items/6/item-1100000000066961466_1722284643.jpg"
       }, 
       {
-        "name": "Sukiyaki Tacos", 
+        "name": "Sukiyaki Beef Tacos", 
         "cat": "KITCHEN", 
         "ings": ["Res sukiyaki", "Tortillas de harina", "Pico de gallo", "Cebollín frito", "Salsa chipotle-guajillo", "Limón de guarnición"], 
         "alg": [{"a": "Gluten", "s": "Tortillas, salsa chipotle-guajillo, res sukiyaki; cebollín frito en la misma freidora que gluten"}, {"a": "Soya", "s": "Res sukiyaki; cebollín frito en aceite de soya — confírmalo con el cliente", "cc": true}, {"a": "Pescado", "s": "Res sukiyaki; cebollín frito en la misma freidora que pescado", "cc": true}, {"a": "Mariscos", "s": "Cebollín frito en la misma freidora que mariscos", "cc": true}, {"a": "Camarón", "s": "Cebollín frito en la misma freidora que camarón", "cc": true}, {"a": "Hongos", "s": "Cebollín frito en la misma freidora que hongos", "cc": true}, {"a": "Cítricos", "s": "Pico de gallo, salsa chipotle-guajillo, limón de guarnición"}, {"a": "Solanáceas", "s": "Pico de gallo, salsa chipotle-guajillo"}, {"a": "Cebolla", "s": "Pico de gallo, cebollín frito, res sukiyaki, salsa chipotle-guajillo"}, {"a": "Arroz", "s": "Cebollín frito en la misma freidora que productos con arroz", "cc": true}, {"a": "Maíz", "s": "Salsa chipotle-guajillo; cebollín frito en la misma freidora que maíz", "cc": true}, {"a": "Ajo", "s": "Salsa chipotle-guajillo"}], 
